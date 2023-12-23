@@ -6,13 +6,13 @@ class juegos:
 
   def combo(self, numerocombo):
 
-   if numerocombo==1:
+   if numerocombo==4:
     print('pagaste 4 créditos puedes acceder a Consolas, Juegos 2D, Juegos 3D, Realidad Virtual')
-   elif  numerocombo==2:
+   elif  numerocombo==3:
      print('pagaste 3 créditos solo podes acceder a las tres primeras Consolas, Juegos 2D, Juegos 3D')
-   elif  numerocombo==3:
+   elif  numerocombo==2:
       print('pagaste  2  créditos puedes acceder a las dos primeras Consolas, Juegos 2D')
-   elif  numerocombo==3:
+   elif  numerocombo==1:
       print('pagaste 1 credito solo a la primera sala puedes acceder')
  
    
