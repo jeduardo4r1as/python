@@ -1,30 +1,29 @@
-class juegos:
+class menu:
 
-#En una sala de juegos existen tre salas: Consolas, Juegos 2D, Juegos 3D, Realidad Virtual. Si 
-# un usuario paga 4 créditos puede acceder a todas, si apga 3 solo podrá acceder a 
-# las tres primeras, si paga 2 a las dos primeras y si paga 1 solo a la primera sala.
-
+#En un restaurante los clientes pueden pedir menú de carne, pescado o verdura. Si pide 
+# carne se le ofrecerá como bebida vino tinto, si pide pescado se le ofrecerá vino blanco
+#  y si pide verdura se le ofrecerá agua. Si no elije el menú de la lista aparecerá 
+# la frase elija carne, pescado o verdura.
   def combo(self, numerocombo):
 
    if numerocombo==1:
-    print('pagaste 4 créditos puedes acceder a Consolas, Juegos 2D, Juegos 3D, Realidad Virtual')
+    print('carne se le ofrecerá como bebida vino tinto')
    elif  numerocombo==2:
-     print('pagaste 3 créditos solo podes acceder a las tres primeras Consolas, Juegos 2D, Juegos 3D')
+     print('pescado se le ofrecerá vino blanco')
    elif  numerocombo==3:
-      print('pagaste  2  créditos puedes acceder a las dos primeras Consolas, Juegos 2D')
-   elif  numerocombo==3:
-      print('pagaste 1 credito solo a la primera sala puedes acceder')
+      print('verdura se le ofrecerá agua')
  
    
 
 
-seleccioncombo=juegos()
+seleccioncombo=menu()
 
-print('ingrese el numero de fichas para Consolas, Juegos 2D, Juegos 3D, Realidad Virtual. ')    
-print('paga 4 créditos puede acceder a todas, ')   
-print('paga 3 solo podrá acceder a las tres primeras')   
-print('paga 2 a las dos primeras')   
-print('paga 1 solo a la primera sala.')   
-numeroentero=int(input("¿Que numero de fichas  va a ingresar?"))
+print('ingrese el numero de la opcion  del  menú que desea  escoger')
+print('1.carne')
+print('2.pescado')
+print('3.verdura.')
+
+    
+numeroentero=int(input("¿Que numero va a ingresar?"))
 
 seleccioncombo.combo(numeroentero)
